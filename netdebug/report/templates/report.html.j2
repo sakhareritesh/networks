@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>NetDebug Report - {{ data.host }}</title></head>
+<body>
+  <h1>NetDebug Report: {{ data.host }}</h1>
+  {% if data.tasks.ping %}
+    <h2>Ping</h2>
+    <pre>{{ data.tasks.ping.raw }}</pre>
+  {% endif %}
+  {% if data.tasks.portscan %}
+    <h2>Port Scan</h2>
+    <ul>
+    {% for port, open in data.tasks.portscan.items() %}
+      <li>{{ port }} : {{ "OPEN" if open else "closed" }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+  {% if data.tasks.traceroute %}
+    <h2>Traceroute</h2>
+    <pre>{{ data.tasks.traceroute }}</pre>
+  {% endif %}
+</body>
+</html>
