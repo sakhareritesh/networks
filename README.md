@@ -24,3 +24,4 @@ Follow these steps to run the toolkit:
 ```bash
 git clone https://github.com/sakhareritesh/networks.git
 cd networks
+python -m netdebug.cli report google.com --tasks ping,portscan,traceroute --out report.html
