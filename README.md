@@ -1,4 +1,4 @@
-# 🛠️ NetDebug Toolkit
+# 🛠️ NetDebug Toolkit - Computer Networks 
 
 A Python-based CLI (Command Line Interface) tool for performing essential network diagnostics like `ping`, `traceroute`, and `TCP port scanning`, with the ability to generate clean, human-readable HTML reports.
 
