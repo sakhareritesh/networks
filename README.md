@@ -15,7 +15,12 @@ A Python-based CLI (Command Line Interface) tool for performing essential networ
 
 ---
 
-## 🚀 CLI Usage
+## 🧪 How to Run the Code
+
+Follow these steps to run the toolkit:
+
+### 1. Clone the Repository
 
 ```bash
-python -m netdebug.cli [command] [options]
+git clone https://github.com/sakhareritesh/networks.git
+cd networks
